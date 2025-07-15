@@ -1,17 +1,19 @@
+'use client'
 import { Socials } from "@/constants";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
+    <div className="w-full h-[75px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
         <a
-          href="#about-me"
+          href="#home"
           className="h-auto w-auto flex flex-row items-center"
         >
           <Image
-            src="/NavLogo.png"
+            src="/logo.png"
             alt="logo"
             width={70}
             height={70}
@@ -19,21 +21,17 @@ const Navbar = () => {
           />
 
           <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            WebChain Dev
+            Sodikjon
           </span>
         </a>
 
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
+        <div className="w-[600px] h-full flex flex-row items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            <a href="#about-me" className="cursor-pointer">
-              About me
-            </a>
-            <a href="#skills" className="cursor-pointer">
-              Skills
-            </a>
-            <a href="#projects" className="cursor-pointer">
-              Projects
-            </a>
+            <Link href="/" className="cursor-pointer">Home</Link>
+            <Link href="/aboutMe" className="cursor-pointer">About Me</Link>
+            <Link href="/skills" className="cursor-pointer">Skills</Link>
+            <Link href="/projects" className="cursor-pointer">Projects</Link>
+            <Link href="/Resume" className="cursor-pointer">Resume</Link>
           </div>
         </div>
 
