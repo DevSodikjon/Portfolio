@@ -263,6 +263,57 @@ export const Services_data = [
   },
 ];
 
+export const Projects_data = [
+  {
+    project_name: "Insurance policy",
+    image: "/impex.png",
+    link: "https://impex-insurance.uz/",
+    description: "lorem ipsum fa idada fada fadfadf add",
+    width: 60,
+    height: 60,
+  },
+  {
+    project_name: "Dora",
+    image: "/dora.png",
+    link: "https://dora.uz/en",
+    description: "lorem ipsum fa idada fada fadfadf add",
+    width: 60,
+    height: 60,
+  },
+  {
+    project_name: "Medical",
+    image: "/medical_image.png",
+    link: "https://deluxe-trifle-cd2462.netlify.app/",
+    description: "lorem ipsum fa idada fada fadfadf add",
+    width: 60,
+    height: 60,
+  },
+  {
+    project_name: "Insurance policy",
+    image: "/impex.png",
+    link: "https://impex-insurance.uz/",
+    description: "lorem ipsum fa idada fada fadfadf add",
+    width: 60,
+    height: 60,
+  },
+  {
+    project_name: "Dora",
+    image: "/dora.png",
+    link: "https://dora.uz/en",
+    description: "lorem ipsum fa idada fada fadfadf add",
+    width: 60,
+    height: 60,
+  },
+  {
+    project_name: "Medical",
+    image: "/medical_image.png",
+    link: "https://dora.uz/en",
+    description: "lorem ipsum fa idada fada fadfadf add",
+    width: 60,
+    height: 60,
+  },
+]
+
 
 
 export const Other_skill = [

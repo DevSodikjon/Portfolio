@@ -4,14 +4,12 @@ import Hero from '../main/Hero'
 import Skills from '../main/Skills'
 import Encryption from '../main/Encryption'
 import Projects from '../main/Projects'
-import AboutMe from '../main/AboutMe'
 import Services from '../main/Services'
 
 const HomePage = () => {
     return (
         <div>
             <Hero />
-            <AboutMe />
             <Skills />
             <Encryption />
             <Services />
