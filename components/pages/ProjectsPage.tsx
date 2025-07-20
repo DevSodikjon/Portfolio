@@ -18,7 +18,6 @@ import {
 
 
 export default function ProjectPage() {
-    console.log(Projects_data);
     return (
 
         <div className="relative flex flex-col h-full w-full">
@@ -26,7 +25,7 @@ export default function ProjectPage() {
             <motion.div
                 className="flex flex-row items-center justify-center px-20 mt-28 w-full z-[20]"
             >
-                <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+                <div className="h-full w-full flex flex-col gap-5 justify-center m-auto mb-20 text-start">
                     <div className=" min-h-auto mx-auto items-center justify-center p-6">
                         {/* Card container */}
                         <div className="rounded-xl max-w-6xl w-full p-8 gap-8 flex flex-wrap justify-around">

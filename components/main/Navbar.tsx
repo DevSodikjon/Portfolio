@@ -29,7 +29,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
             <Link href="/" className="cursor-pointer">Home</Link>
             <Link href="/aboutMe" className="cursor-pointer">About Me</Link>
-            <Link href="/skills" className="cursor-pointer">Skills</Link>
+            {/* <Link href="/skills" className="cursor-pointer">Skills</Link> */}
             <Link href="/projects" className="cursor-pointer">Projects</Link>
             <Link href="/Resume" className="cursor-pointer">Resume</Link>
           </div>
@@ -37,13 +37,15 @@ const Navbar = () => {
 
         <div className="flex flex-row gap-5">
           {Socials.map((social) => (
-            <Image
-              src={social.src}
-              alt={social.name}
-              key={social.name}
-              width={24}
-              height={24}
-            />
+            <Link href={social.link} target="_blank">
+              <Image
+                src={social.src}
+                alt={social.name}
+                key={social.name}
+                width={24}
+                height={24}
+              />
+            </Link>
           ))}
         </div>
       </div>

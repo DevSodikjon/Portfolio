@@ -13,7 +13,7 @@ const Services = () => {
     return (
         <motion.div >
 
-            <div className='mt-28 flex flex-row relative items-center justify-center w-full h-full'>
+            <div className='mt-28 flex flex-row relative items-center justify-center w-full h-full z-[20]'>
                 <div className="w-full h-auto top-0 z-[5]">
                     <motion.div
                         className="text-[40px] font-medium text-center text-gray-200"
@@ -31,7 +31,7 @@ const Services = () => {
                                     Creating responsive, modern, and user-friendly interfaces with React, Tailwind CSS, and TypeScript.
                                 </p>
                             </div>
-                            <div className="service_type w-[250px]">
+                            <div className="service_type w-[250px] overflow-hidden">
                                 <Image src="/bot_service.png" alt="frontend_logo" width={200} height={200} />
                                 <h2 className="text-white bold text-xl mt-6">Telegram bot</h2>
                                 <p className="text-slate-300 mt-4">

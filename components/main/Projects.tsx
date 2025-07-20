@@ -14,40 +14,42 @@ import {
 const Projects = () => {
   const sortData = Projects_data.slice(0, 3);
 
-  sortData.map((project1) => (
-    console.log(project1.link)
-  ))
 
   return (
     <div
-      className="w-full text-center align-middle py-20"
+      className="w-full relative align-middle py-20 z-[20]"
     >
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 py-20">
+      <h1 className="text-[40px] text-center font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 py-20">
         My Projects
       </h1>
 
-      <div className="h-full w-full flex md:flex-row gap-10 px-10">
+      <div className="w-full h-full justify-around flex md:flex-row">
 
         {sortData.map((project, index) => (
-          <div className="card_box" key={index}>
+          <div className="w-[300px]" key={index}>
 
             <ProjectCard
               src={project.image}
               title={project.project_name}
               description={project.description}
-              link="https://deluxe-trifle-cd2462.netlify.app/"
+              link={project.link ? project.link : "Link mavjud emas"}
             />
-            {/* {project.link} */}
 
           </div>
         ))}
 
       </div>
 
-      <div className="w-full h-auto mt-8">
-        <Link href="/projects" className="cursor-pointer text-white">Learn More</Link >
+      <div className="w-full text-center h-auto mt-14">
+        <motion.a
+          variants={slideInFromLeft(1)}
+          className="py-3 px-14 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+        >
+          <Link href="/projects" className="cursor-pointer text-white">View More</Link >
+        </motion.a>
       </div>
     </div>
+
   );
 };
 
