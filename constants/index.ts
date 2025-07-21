@@ -82,19 +82,19 @@ export const Skill_data = [
 
 export const Socials = [
   {
-    name: "Discord",
+    name: "Instagram",
     src: "/instagram.svg",
-    link: "https://www.instagram.com/sodikjon_nurmirzaev/?__pwa=1"
+    link: "https://www.instagram.com/sodikjon_nurmirzaev/?__pwa=1",
   },
   {
     name: "Linkedin",
     src: "/linkedin.png",
-    link: "https://www.instagram.com/sodikjon_nurmirzaev/?__pwa=1"
+    link: "https://www.linkedin.com/in/sodikjon-nurmirzaev-46602a267/",
   },
   {
-    name: "Instagram",
-    src: "/discord.svg",
-    link: "https://www.instagram.com/sodikjon_nurmirzaev/?__pwa=1"
+    name: "Github",
+    src: "/github.png",
+    link: "https://github.com/DevSodikjon",
   },
 ];
 

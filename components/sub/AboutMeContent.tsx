@@ -10,7 +10,7 @@ import {
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
 const AboutMeContent = () => {
     return (
@@ -80,7 +80,7 @@ const AboutMeContent = () => {
                         </h1>
                         <div className="flex justify-around space-x-8 my-10">
                             <a
-                                href="https://github.com/username"
+                                href="https://github.com/DevSodikjon"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-white text-3xl transition"
@@ -89,7 +89,7 @@ const AboutMeContent = () => {
                                 <FaGithub />
                             </a>
                             <a
-                                href="https://linkedin.com/in/username"
+                                href="https://www.linkedin.com/in/sodikjon-nurmirzaev-46602a267/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-white text-3xl transition"
@@ -98,20 +98,20 @@ const AboutMeContent = () => {
                                 <FaLinkedin />
                             </a>
                             <a
-                                href="https://twitter.com/username"
+                                href="https://www.facebook.com/DevSodikjon2003"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-white text-3xl transition"
-                                aria-label="Twitter"
+                                aria-label="Facebook"
                             >
-                                <FaTwitter />
+                                <FaFacebook />
                             </a>
                             <a
-                                href="https://twitter.com/username"
+                                href="https://www.instagram.com/sodikjon_nurmirzaev/?__pwa=1"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-white text-3xl transition"
-                                aria-label="Twitter"
+                                aria-label="Instagram"
                             >
                                 <FaInstagram />
                             </a>

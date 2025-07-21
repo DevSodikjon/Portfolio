@@ -20,7 +20,7 @@ const Navbar = () => {
             className="cursor-pointer hover:animate-slowspin"
           />
 
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
+          <span className="font-bold text-2xl hidden md:block text-gray-300">
             Sodikjon
           </span>
         </Link>
@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="w-[600px] h-full flex flex-row items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
             <Link href="/" className="cursor-pointer">Home</Link>
-            <Link href="/aboutMe" className="cursor-pointer">About Me</Link>
+            <Link href="/aboutMe" className="cursor-pointer">About</Link>
             {/* <Link href="/skills" className="cursor-pointer">Skills</Link> */}
             <Link href="/projects" className="cursor-pointer">Projects</Link>
             <Link href="/Resume" className="cursor-pointer">Resume</Link>
