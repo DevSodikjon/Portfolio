@@ -1,54 +1,89 @@
 'use client'
 import { Socials } from "@/constants";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
+import { HiMenuAlt3, HiX } from "react-icons/hi";
+
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div className="w-full h-[75px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-        <Link
-          href="/"
-          className="h-auto w-auto flex flex-row items-center"
-        >
+    <div className="w-full h-[75px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-4 md:px-10">
+      <div className="w-full h-full flex items-center justify-between m-auto px-[10px]">
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src="/logo.png"
             alt="logo"
-            width={70}
-            height={70}
+            width={50}
+            height={50}
             className="cursor-pointer hover:animate-slowspin"
           />
-
-          <span className="font-bold text-2xl hidden md:block text-gray-300">
+          <span className="hidden md:flex font-bold text-xl  md:text-2xl text-gray-300">
             Sodikjon
           </span>
         </Link>
 
-        <div className="w-[600px] h-full flex flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
+        {/* Desktop Links */}
+        <div className="hidden sm:flex w-full max-w-[50%] items-center h-full md:mr-10 max-w-[30%]">
+          <div className="w-full flex justify-between items-center gap-6 px-6 py-2 border border-[#7042f861] bg-[#0300145e] rounded-full text-gray-200 text-sm md:text-base">
             <Link href="/" className="cursor-pointer">Home</Link>
             <Link href="/aboutMe" className="cursor-pointer">About</Link>
-            {/* <Link href="/skills" className="cursor-pointer">Skills</Link> */}
             <Link href="/projects" className="cursor-pointer">Projects</Link>
             <Link href="/resume" className="cursor-pointer">Resume</Link>
           </div>
         </div>
 
-        <div className="flex flex-row gap-5">
+        {/* Social Icons */}
+        <div className="hidden sm:flex flex-row gap-4">
           {Socials.map((social) => (
-            <Link href={social.link} target="_blank">
+            <Link href={social.link} target="_blank" key={social.name}>
               <Image
                 src={social.src}
                 alt={social.name}
-                key={social.name}
                 width={24}
                 height={24}
               />
             </Link>
           ))}
         </div>
+
+        {/* Mobile Menu Button */}
+        <div className="flex sm:hidden">
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="sm:hidden text-gray-300 text-3xl"
+          >
+            {menuOpen ? <HiX /> : <HiMenuAlt3 />}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="sm:hidden w-full absolute top-[75px] left-0 shadow-[#2A0E61]/50 bg-[#030014b8] backdrop-blur-md z-40 transition-all duration-[500ms] ease-in-out transform">
+          <div className="flex flex-col items-start px-6 py-4 space-y-4 text-gray-200 text-base">
+            <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
+            <Link href="/aboutMe" onClick={() => setMenuOpen(false)}>About</Link>
+            <Link href="/projects" onClick={() => setMenuOpen(false)}>Projects</Link>
+            <Link href="/resume" onClick={() => setMenuOpen(false)}>Resume</Link>
+            <div className="flex gap-4 mt-4">
+              {Socials.map((social) => (
+                <Link href={social.link} target="_blank" key={social.name}>
+                  <Image
+                    src={social.src}
+                    alt={social.name}
+                    width={20}
+                    height={20}
+                  />
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
