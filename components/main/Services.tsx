@@ -11,12 +11,12 @@ import Image from "next/image";
 
 const Services = () => {
     return (
-        <motion.div >
+        <motion.div variants={slideInFromTop}>
 
             <div className='mt-28 flex flex-row relative items-center justify-center w-full h-full z-[20]'>
                 <div className="w-full h-auto top-0 z-[5]">
                     <motion.div
-                        className="text-[40px] font-medium text-center text-gray-200"
+                        className="text-[40px] font-semibold text-center text-gray-200"
                     >
                         Services
 
@@ -24,15 +24,17 @@ const Services = () => {
 
                     <div className="mt-10">
                         <div className="flex justify-evenly my-10">
-                            <div className="service_type w-[250px] rounded-lg">
-                                <div className="overflow-hidden group">
-                                    <Image src="/UI-UX_service.png" alt="frontend_logo" width={180} height={180} className="ml-2 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110" />
+                            <motion.div variants={slideInFromLeft(0.5)} className="Welcome-">
+                                <div className="service_type w-[250px] rounded-lg">
+                                    <div className="overflow-hidden group">
+                                        <Image src="/UI-UX_service.png" alt="frontend_logo" width={180} height={180} className="ml-2 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110" />
+                                    </div>
+                                    <h2 className="text-white bold text-xl mt-6">Front end development</h2>
+                                    <p className="text-slate-300 mt-4">
+                                        Creating responsive, modern, and user-friendly interfaces with React, Tailwind CSS, and TypeScript.
+                                    </p>
                                 </div>
-                                <h2 className="text-white bold text-xl mt-6">Front end development</h2>
-                                <p className="text-slate-300 mt-4">
-                                    Creating responsive, modern, and user-friendly interfaces with React, Tailwind CSS, and TypeScript.
-                                </p>
-                            </div>
+                            </motion.div>
                             <div className="service_type w-[250px] overflow-hidden">
                                 <div className="overflow-hidden group">
                                     <Image src="/bot_service.png" alt="frontend_logo" width={180} height={180} className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110" />
@@ -44,7 +46,7 @@ const Services = () => {
                             </div>
                             <div className="service_type w-[250px]">
                                 <div className="overflow-hidden group">
-                                    <Image src="/landingPage_sevice.png" alt="frontend_logo" width={180} height={180}className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110" />
+                                    <Image src="/landingPage_sevice.png" alt="frontend_logo" width={180} height={180} className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110" />
                                 </div>
                                 <h2 className="text-white bold text-xl mt-6">Landing page</h2>
                                 <p className="text-slate-300 mt-4">
@@ -53,7 +55,7 @@ const Services = () => {
                             </div>
                             <div className="service_type w-[250px]">
                                 <div className="overflow-hidden group">
-                                    <Image src="/frontend_service.png" alt="frontend_logo" width={180} height={180}className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110" />
+                                    <Image src="/frontend_service.png" alt="frontend_logo" width={180} height={180} className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110" />
                                 </div>
                                 <h2 className="text-white bold text-xl mt-6">Full stack development</h2>
                                 <p className="text-slate-300 mt-4">
