@@ -29,7 +29,7 @@ const AboutMeContent = () => {
                                 <h1 className="text-4xl font-bold text-white mb-4">About Me</h1>
                                 <div className="">
                                     <p className="text-gray-300 mb-6 leading-relaxed">
-                                        I'm <span className="text-purple-400 font-semibold">Sodikjon Nurmirzaev</span>, or just <span className="text-purple-400 font-semibold">Sodikjon</span>.
+                                        I am <span className="text-purple-400 font-semibold">Sodikjon Nurmirzaev</span>, or just <span className="text-purple-400 font-semibold">Sodikjon</span>.
                                         Currently, I'm a student at <span className="text-blue-300 font-medium">Sejong University</span> in South Korea, majoring in Computer Science.
                                     </p>
                                     <p className="text-gray-300 mb-6 leading-relaxed">

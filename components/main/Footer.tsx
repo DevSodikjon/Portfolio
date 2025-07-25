@@ -40,12 +40,12 @@ const Footer = () => {
 
                         {/* Social Media */}
                         <div className="min-w-[200px] h-auto flex flex-col items-center justify-start z-[20]">
-                            {Socials.map((social) => (
+                            {Socials.map((social, index) => (
                                 <Link href={social.link} target="_blank" className="my-[20px] flex items-center gap-2">
                                     <Image
+                                        key={index}
                                         src={social.src}
                                         alt={social.name}
-                                        key={social.name}
                                         width={24}
                                         height={24}
                                     />
