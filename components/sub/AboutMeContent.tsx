@@ -17,17 +17,17 @@ const AboutMeContent = () => {
         <motion.div
             initial="hidden"
             animate="visible"
-            className="flex flex-row items-center justify-center px-20 mt-28 w-full z-[20]"
+            className="flex flex-row items-center justify-center mt-28 w-full z-[20]"
         >
             <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
-                <div className=" min-h-auto mx-auto items-center justify-center p-6">
+                <div className=" min-h-auto mx-auto flex flex-wrap items-center justify-center p-6">
                     {/* Card container */}
                     <div className="bg-white bg-opacity-5 backdrop-blur-md rounded-xl shadow-lg max-w-6xl w-full p-8 gap-8">
                         {/* Left side: text + button */}
-                        <div className="flex flex-col md:flex-row">
-                            <div className="flex-1 flex flex-col justify-between">
-                                <div>
-                                    <h1 className="text-4xl font-bold text-white mb-4">About Me</h1>
+                        <div className="flex flex-col flex-wrap md:flex-row max-900:flex-col ">
+                            <div className="w-[400px] flex-1 flex flex-col justify-between max-900:w-full">
+                                <h1 className="text-4xl font-bold text-white mb-4">About Me</h1>
+                                <div className="">
                                     <p className="text-gray-300 mb-6 leading-relaxed">
                                         I'm <span className="text-purple-400 font-semibold">Sodikjon Nurmirzaev</span>, or just <span className="text-purple-400 font-semibold">Sodikjon</span>.
                                         Currently, I'm a student at <span className="text-blue-300 font-medium">Sejong University</span> in South Korea, majoring in Computer Science.
@@ -58,14 +58,14 @@ const AboutMeContent = () => {
                             </div>
 
                             {/* Right side: profile image */}
-                            <div className="flex-1 flex justify-center items-center">
+                            <div className="flex-1 flex justify-center items-center max-900:mt-6">
                                 <div className="w-full h-[500px] rounded-sm overflow-hidden shadow-lg">
                                     <Image
                                         src="/profil_4.jpg" // O‘z rasmi manzilingni yoz
                                         alt="Sodiqjon Nurmirzaev"
                                         width={556}
                                         height={556}
-                                        className="object-cover"
+                                        className="object-cover "
                                         priority
                                     />
                                 </div>

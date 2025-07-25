@@ -21,29 +21,51 @@ import {
 export default function ProjectPage() {
     return (
         <div className="relative flex flex-col h-full w-full" id="home">
-            {/* <video
+            <video
                 autoPlay
                 muted
                 loop
-                className="rotate-180 absolute top-[-520px]  h-full w-full left-0 z-[1] object-cover "
+                className="rotate-180 absolute h-full w-full left-0 z-[1]
+                top-[-515px] 
+                max-1500:top-[-510px]
+                max-1400:top-[-510px]
+                max-1300:top-[-510px]
+                max-1200:top-[-510px]
+                max-1100:top-[-730px]
+                max-1000:top-[-730px] max-1000:object-contain
+                max-900:top-[-730px]
+                max-800:top-[-730px]
+                max-768:top-[-730px] 
+                max-700:top-[-1380px]
+                max-640:top-[-1380px]
+                max-600:top-[-1380px]
+                max-540:top-[-1380px] 
+                max-500:top-[-1380px]
+                max-480:top-[-1380px]                      
+                max-425:top-[-1380px]                     
+                max-400:top-[-1380px]                      
+                max-320:top-[-1380px] 
+                "
             >
                 <source src="/blackhole.webm" type="video/webm" />
-            </video> */}
+            </video>
+
+
             <motion.div
                 initial="hidden"
                 animate="visible"
                 className=" px-20 mt-40 w-full z-[20]"
             >
                 <div className="title">
-                    <h1 className="text-[40px] text-center font-semibold text-transparent bg-clip-text bg-gradient-to-r text-white">
+                    <h1 className="text-[40px] font-bold text-transparent bg-clip-text text-white max-700:text-center">
                         Projects
                     </h1>
                 </div>
 
-                <div className="rounded-xl w-full p-8 gap-12 flex justify-center flex-wrap ">
+                <div className="rounded-xl w-full py-12 flex justify-between flex-wrap max-700:justify-center">
                     {Projects_data.map((project) => (
 
-                        <div className="card_box w-[320px]">
+                        <div className="card_box w-[320px] my-4 max-800:w-[280px]">
                             <ProjectCard
                                 src={project.image}
                                 title={project.project_name}
@@ -54,7 +76,7 @@ export default function ProjectPage() {
                     ))}
                 </div>
 
-            </motion.div>
-        </div>
+            </motion.div >
+        </div >
     );
 }

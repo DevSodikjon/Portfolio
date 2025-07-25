@@ -15,10 +15,10 @@ export function TimelineDemo() {
                     <div className="title flex gap-8">
                         <h2 className="text-white text-4xl font-bold">Bachelor in Computer Science and Engineering</h2>
                     </div>
-                    <div className="flex justify-between mt-4">
+                    <div className="flex justify-between mt-4 max-1300:bg-green-800">
                         <div className="">
                             <p className="text-white text-lg" >
-                                Sejong University, <br />Seoul South Korea
+                                Sejong University, <br className="max-1300:hidden" />Seoul South Korea
                             </ p >
                         </div>
                         <div>
