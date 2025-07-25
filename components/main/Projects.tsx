@@ -17,37 +17,39 @@ const Projects = () => {
 
   return (
     <motion.div variants={slideInFromTop}>
-      <div
-        className="w-full relative align-middle py-20 z-[20]"
-      >
-        <h1 className="text-[40px] text-center font-semibold text-transparent bg-clip-text bg-gradient-to-r text-white py-20">
-          My Projects
-        </h1>
+      <div className="container m-auto">
+        <div
+          className="w-full relative align-middle py-20 z-[20]"
+        >
+          <h1 className="text-[40px] text-center font-semibold text-transparent bg-clip-text bg-gradient-to-r text-white py-20">
+            My Projects
+          </h1>
 
-        <div className="w-full h-full justify-around flex md:flex-row">
+          <div className="sm:flex-wrap gap-4 md:flex-wrap lg:flex-wrap xl:flex-wrap w-full h-full flex flex-wrap justify-evenly md:flex-row">
 
-          {sortData.map((project, index) => (
-            <div className="w-[300px]" key={index}>
+            {sortData.map((project, index) => (
+              <div className="sm:w-[340px] w-[300px] mt-6" key={index}>
 
-              <ProjectCard
-                src={project.image}
-                title={project.project_name}
-                description={project.description}
-                link={project.link ? project.link : "Link mavjud emas"}
-              />
+                <ProjectCard
+                  src={project.image}
+                  title={project.project_name}
+                  description={project.description}
+                  link={project.link ? project.link : "Link mavjud emas"}
+                />
 
-            </div>
-          ))}
+              </div>
+            ))}
 
-        </div>
+          </div>
 
-        <div className="w-full text-center h-auto mt-14">
-          <motion.a
-            variants={slideInFromLeft(1)}
-            className="py-3 px-14 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-          >
-            <Link href="/projects" className="cursor-pointer text-white">View More</Link >
-          </motion.a>
+          <div className="w-full text-center h-auto mt-14">
+            <motion.a
+              variants={slideInFromLeft(1)}
+              className="py-3 px-14 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+            >
+              <Link href="/projects" className="cursor-pointer text-white">View More</Link >
+            </motion.a>
+          </div>
         </div>
       </div>
     </motion.div>
