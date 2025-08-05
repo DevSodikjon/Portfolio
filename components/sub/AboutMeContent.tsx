@@ -30,10 +30,10 @@ const AboutMeContent = () => {
                                 <div className="">
                                     <p className="text-gray-300 mb-6 leading-relaxed">
                                         I am <span className="text-purple-400 font-semibold">Sodikjon Nurmirzaev</span>, or just <span className="text-purple-400 font-semibold">Sodikjon</span>.
-                                        Currently, I'm a student at <span className="text-blue-300 font-medium">Sejong University</span> in South Korea, majoring in Computer Science.
+                                        Currently, I am a student at <span className="text-blue-300 font-medium">Sejong University</span> in South Korea, majoring in Computer Science.
                                     </p>
                                     <p className="text-gray-300 mb-6 leading-relaxed">
-                                        I'm a passionate web developer who loves building fast, modern, and user-friendly web applications.
+                                        I am a passionate web developer who loves building fast, modern, and user-friendly web applications.
                                         I specialize in technologies like React, JavaScript, TypeScript, and Node.js.
                                     </p>
 
