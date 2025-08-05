@@ -10,6 +10,9 @@ import Image from "next/image";
 
 interface TimelineEntry {
     title: string;
+    description: string;
+    date: string;
+    img?: string;
     content: React.ReactNode;
 }
 
