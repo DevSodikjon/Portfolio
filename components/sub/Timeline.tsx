@@ -12,7 +12,7 @@ interface TimelineEntry {
     title: string;
     description: string;
     date: string;
-    img?: string;
+    img: string;
     content: React.ReactNode;
 }
 
