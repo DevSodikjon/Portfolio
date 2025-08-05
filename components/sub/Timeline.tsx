@@ -11,10 +11,10 @@ import Image from "next/image";
 interface TimelineEntry {
     title: string;
     img: string;
-    description?: string;
-    content: React.ReactNode;
+    date: string;
+    description: string;
+    content: JSX.Element;
 }
-
 
 export const Timeline = ({ data = [] }: { data?: TimelineEntry[] }) => {
 
