@@ -15,12 +15,18 @@ export default function AboutPage() {
         max-700:top-[-600px]
         max-640:top-[-600px]
         max-600:top-[-615px]
-        max-540:top-[-650px]
+        max-540:top-[-655px]
         max-500:top-[-680px]
-        max-425:top-[-700px]
+        max-480:top-[-680px]
+        max-425:top-[-680px]
+        max-414:top-[-690px]
         max-400:top-[-715px]
+        max-390:top-[-770px]
         max-375:top-[-770px]
-        max-320:top-[-750px]
+        max-360:top-[-770px]
+        max-350:top-[-780px]
+        max-340:top-[-780px]
+        max-320:top-[-810px]
         "
       >
         <source src="/blackhole.webm" type="video/webm" />
