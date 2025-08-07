@@ -11,9 +11,7 @@ import Image from "next/image";
 interface TimelineEntry {
     title: string;
     img: string;
-    date: string;
-    description: string;
-    content: JSX.Element;
+    content: React.ReactNode;
 }
 
 export const Timeline = ({ data = [] }: { data?: TimelineEntry[] }) => {

@@ -1,12 +1,12 @@
 import React from "react";
-import { Timeline, TimelineEntry } from "@/components/sub/Timeline";
+import { Timeline } from "@/components/sub/Timeline";
 import { FaYoutube } from "react-icons/fa";
 
 
 import Image from "next/image";
 
 export function TimelineDemo() {
-    const data: TimelineEntry[] = [
+    const data = [
         {
             title: "2025",
             img: "/eduIcon.png",
