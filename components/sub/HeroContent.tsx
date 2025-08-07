@@ -33,13 +33,20 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.5)}
           className="sm:flex-row text-3xl flex flex-col gap-6 mt-6 md:text-4xl xl:text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
-          <span>
+          {/* <span>
             Delivering
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
               seamless{" "}
             </span>
             project exprience
+          </span> */}
+          <span>
+
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              {" "}
+              Sodikjon Nurmirzaev{" "}
+            </span>
           </span>
         </motion.div>
 
