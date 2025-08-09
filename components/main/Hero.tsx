@@ -31,8 +31,8 @@ const Hero = () => {
   max-390:top-[-375px]                                            
   max-375:top-[-370px]                                            
   max-370:top-[-370px]                                            
-  max-360:top-[-375px]                                            
-  max-350:top-[-310px]                                            
+  max-360:top-[-320px]                                            
+  max-350:top-[-340px]                                            
   max-340:top-[-305px]                      
   max-320:top-[-295px]                      
   "
