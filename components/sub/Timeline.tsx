@@ -40,11 +40,19 @@ export const Timeline = ({ data = [] }: { data?: TimelineEntry[] }) => {
             className="w-full font-sans md:px-10"
             ref={containerRef}
         >
-            <div className="max-w-7xl mx-auto py-18 px-4 md:px-8 lg:px-10">
-                <h1 className="text-lg md:text-4xl mb-4 font-semibold text-black dark:text-white max-w-4xl">
+            <div className="max-w-7xl mx-auto py-18 px-4 md:px-8 lg:px-10 
+            max-390:max-w-full max-390:px-2
+            
+            ">
+                <h1 className="text-lg md:text-4xl mb-4 font-semibold text-black dark:text-white max-w-4xl 
+                max-390:max-w-full
+                ">
                     From Curiosity to Code <br /> My Ongoing Evolution
                 </h1>
-                <p className="text-neutral-700 dark:text-neutral-300 text-lg md:text-base max-w-sm">
+                <p className="text-neutral-700 dark:text-neutral-300 text-lg md:text-base max-w-sm 
+                max-768:text-sm
+                max-800:text-sm
+                ">
                     A quick overview of my skills, experience, and the journey that brought me here.
                 </p>
             </div>
@@ -53,19 +61,46 @@ export const Timeline = ({ data = [] }: { data?: TimelineEntry[] }) => {
                 {data.map((item, index) => (
                     <div
                         key={index}
-                        className="flex justify-start pt-10 md:pt-40 md:gap-10"
+                        className="flex justify-start pt-10 md:pt-40 md:gap-10 max-768:gap-0 
+                        max-1100:gap-0
+                        max-500:gap-0
+                        "
                     >
-                        <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
-                            <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
+                        <div className="sticky flex flex-col md:flex-row z-40 items-center top-24 self-start max-w-xs lg:max-w-sm md:w-full max-1500:w-[30%]">
+                            <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center
+                             max-360:w-6 max-360:left-5
+                             max-370:w-6 max-370:left-5
+                             max-375:w-6 max-375:left-5
+                             max-390:w-6 max-390:left-5
+                             max-400:w-6 max-400:left-5
+                             max-768:w-8 max-768:left-4
+                             ">
                                 <Image src={item.img} alt="edu_icon" width={100} height={100} />
                             </div>
-                            <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 dark:text-neutral-500 ">
+                            <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 dark:text-neutral-500 
+                            max-360:text-sm
+                            max-370:text-sm
+                            max-375:text-sm
+                            max-380:text-sm
+                            max-390:text-sm
+                            max-768:text-2xl
+                            max-1100:text-2xl
+
+                            ">
                                 {item.title}
                             </h3>
                         </div>
 
-                        <div className="relative pl-20 pr-4 md:pl-4 w-full">
-                            <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
+                        <div className="relative pl-20 pr-4 md:pl-4 w-full
+                        max-360:pl-0
+                        max-370:pl-0
+                        max-380:pl-0
+                        max-390:pl-0
+                        max-500:pl-0
+                        max-768:pl-0
+                        max-1100:pl-0
+                        ">
+                            <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500 max-360:text-lg">
                                 {item.title}
                             </h3>
                             {item.content}

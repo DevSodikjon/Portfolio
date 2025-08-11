@@ -34,6 +34,7 @@ const config: Config = {
         'max-414': { 'raw': '(max-width: 414px)' },
         'max-400': { 'raw': '(max-width: 400px)' },
         'max-390': { 'raw': '(max-width: 390px)' },
+        'max-380': { 'raw': '(max-width: 380px)' },
         'max-375': { 'raw': '(max-width: 375px)' },
         'max-370': { 'raw': '(max-width: 370px)' },
         'max-360': { 'raw': '(max-width: 360px)' },
