@@ -30,6 +30,7 @@ const config: Config = {
         'max-540': { 'raw': '(max-width: 540px)' },
         'max-500': { 'raw': '(max-width: 500px)' },
         'max-480': { 'raw': '(max-width: 480px)' },
+        'max-460': { 'raw': '(max-width: 460px)' },
         'max-425': { 'raw': '(max-width: 425px)' },
         'max-414': { 'raw': '(max-width: 414px)' },
         'max-400': { 'raw': '(max-width: 400px)' },
@@ -40,8 +41,10 @@ const config: Config = {
         'max-360': { 'raw': '(max-width: 360px)' },
         'max-350': { 'raw': '(max-width: 350px)' },
         'max-340': { 'raw': '(max-width: 340px)' },
+        'max-330': { 'raw': '(max-width: 330px)' },
         'max-320': { 'raw': '(max-width: 320px)' },
         'max-300': { 'raw': '(max-width: 300px)' },
+        'min-360': { 'raw': '(min-width: 360px)' },
       }
     },
   },
