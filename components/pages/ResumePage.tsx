@@ -4,7 +4,7 @@ import ResumeContent from '../sub/ResumeContent'
 export default function ResumePage() {
   return (
     <div className="relative flex flex-col h-full w-full" id="home">
-      <video
+      {/* <video
         autoPlay
         muted
         loop
@@ -38,7 +38,7 @@ export default function ResumePage() {
       // max-1000:top-[-1340px] max-1000:object-contain
       >
         <source src="/blackhole.webm" type="video/webm" />
-      </video>
+      </video> */}
       <ResumeContent />
     </div>
   )
