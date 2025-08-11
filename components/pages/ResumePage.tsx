@@ -31,10 +31,10 @@ export default function ResumePage() {
                 max-390:top-[-1154px]
                 max-380:top-[-1160px]
                 max-375:top-[-1165px]
-                max-370:top-[-1160px]
+                max-370:top-[-1180px]
                 max-360:top-[-1225px]
-                max-350:top-[-1255px]
-                max-340:top-[-1195px]
+                max-350:top-[-1250px]
+                max-340:top-[-1250px]
                 "
                 // max-1000:top-[-1340px] max-1000:object-contain
       >
