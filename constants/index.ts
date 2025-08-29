@@ -59,12 +59,18 @@ export const Skill_data = [
 ];
 
 export const Socials = [
-  {
-    id: 1,
-    name: "Instagram",
-    src: "/instagram.svg",
-    link: "https://www.instagram.com/sodikjon_nurmirzaev/?__pwa=1",
-  },
+  // {
+  //   id: 1,
+  //   name: "Instagram",
+  //   src: "/instagram.svg",
+  //   link: "https://www.instagram.com/sodikjon_nurmirzaev/?__pwa=1",
+  // },
+  // {
+  //   id: 1,
+  //   name: "Telegram",
+  //   src: "/telegram.png",
+  //   link: "https://www.linkedin.com/in/sodikjon-nurmirzaev-46602a267/",
+  // },
   {
     id: 2,
     name: "Linkedin",
@@ -77,6 +83,27 @@ export const Socials = [
     src: "/github.png",
     link: "https://github.com/DevSodikjon",
   },
+];
+export const Contact = [
+  
+  {
+    id: 1,
+    name: "Telegram",
+    src: "/telegram.png",
+    link: "https://t.me/Developer_Sodikjon_Nurmirzaev",
+  },
+  {
+    id: 2,
+    name: "010-6545-6697",
+    src: "/telephone.png",
+    link: "https://www.linkedin.com/in/sodikjon-nurmirzaev-46602a267/",
+  },
+  // {
+  //   id: 3,
+  //   name: "Github",
+  //   src: "/github.png",
+  //   link: "https://github.com/DevSodikjon",
+  // },
 ];
 
 

@@ -1,5 +1,5 @@
 'use client'
-import { Socials } from "@/constants";
+import { Contact, Socials } from "@/constants";
 import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
@@ -38,7 +38,7 @@ const Navbar = () => {
 
         {/* Social Icons */}
         <div className="hidden sm:flex flex-row gap-4">
-          {Socials.map((social) => (
+          {Contact.map((social) => (
             <Link href={social.link} target="_blank" key={social.name}>
               <Image
                 src={social.src}

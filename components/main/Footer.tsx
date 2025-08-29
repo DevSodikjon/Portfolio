@@ -8,6 +8,7 @@ import {
 } from "react-icons/rx";
 
 import { Socials } from "@/constants";
+import { Contact } from "@/constants";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -41,6 +42,22 @@ const Footer = () => {
                         {/* Social Media */}
                         <div className="min-w-[200px] h-auto flex flex-col items-center justify-start z-[20]">
                             {Socials.map((social, index) => (
+                                <Link href={social.link} target="_blank" className="my-[20px] flex items-center gap-2" key={social.id}>
+                                    <Image
+
+                                        src={social.src}
+                                        alt={social.name}
+                                        width={24}
+                                        height={24}
+                                    />
+                                    <p>{social.name}</p>
+                                </Link>
+                            ))}
+                        </div>
+
+                        {/* Contact */}
+                        <div className="min-w-[200px] h-auto flex flex-col items-center justify-start z-[20]">
+                            {Contact.map((social, index) => (
                                 <Link href={social.link} target="_blank" className="my-[20px] flex items-center gap-2" key={social.id}>
                                     <Image
 
