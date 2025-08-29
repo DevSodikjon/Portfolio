@@ -26,7 +26,7 @@ const ProjectCard = ({ src, title, description, link }: Props) => {
         <div className="relative p-4">
           <h1 className="text-xl font-semibold text-white">{title}</h1>
           <p className="my-3 text-sm text-gray-300">{description}</p>
-          <Link href={link ?? "#"} target="_blank" rel="noopener noreferrer" className="underline cursor-pointer text-white" >{title}</Link>
+          {/* <Link href={link ?? "#"} target="_blank" rel="noopener noreferrer" className="underline cursor-pointer text-white" >{title}</Link> */}
         </div>
       </div>
     </div>

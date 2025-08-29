@@ -29,13 +29,14 @@ const Projects = () => {
 
             {sortData.map((project, index) => (
               <div className="sm:w-[340px] w-[300px] mt-6" key={index}>
-
-                <ProjectCard
-                  src={project.image}
-                  title={project.project_name}
-                  description={project.description}
-                  link={project.link ? project.link : "Link mavjud emas"}
-                />
+                <Link href={project.link ? project.link : "Link mavjud emas"} target="_blank">
+                  <ProjectCard
+                    src={project.image}
+                    title={project.project_name}
+                    description={project.description}
+                    link={project.link ? project.link : "Link mavjud emas"}
+                  />
+                </Link>
 
               </div>
             ))}

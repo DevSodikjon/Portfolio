@@ -64,15 +64,16 @@ export default function ProjectPage() {
 
                 <div className="rounded-xl w-full py-12 flex justify-between flex-wrap max-700:justify-center">
                     {Projects_data.map((project, index) => (
-
-                        <div className="card_box w-[320px] my-4 max-800:w-[280px]" key={project.id}>
-                            <ProjectCard
-                                src={project.image}
-                                title={project.project_name}
-                                description={project.description}
-                                link={project.link}
-                            />
-                        </div>
+                        <Link href={project.link} target="_blank">
+                            <div className="card_box w-[320px] my-4 max-800:w-[280px]" key={project.id}>
+                                <ProjectCard
+                                    src={project.image}
+                                    title={project.project_name}
+                                    description={project.description}
+                                    link={project.link}
+                                />
+                            </div>
+                        </Link>
                     ))}
                 </div>
 

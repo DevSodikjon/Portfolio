@@ -10,7 +10,7 @@ const HomePage = () => {
         <div>
             <Hero />
             <Skills />
-            <Encryption />
+            {/* <Encryption /> */}
             <Services />
             <Projects />
         </div>

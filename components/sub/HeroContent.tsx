@@ -44,7 +44,7 @@ const HeroContent = () => {
               max-320:text-[10px]
           
           ">
-            Fullstack Developer Portfolio
+            Fullstack Developer
           </h1>
         </motion.div>
 
@@ -99,7 +99,7 @@ const HeroContent = () => {
           max-320:max-w-[150px] max-320:text-sm
           "
         >
-          <Link href="/aboutMe">Learn more !</Link>
+          <Link href="/aboutMe">Learn more</Link>
         </motion.a>
       </div>
 
