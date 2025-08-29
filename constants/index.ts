@@ -96,7 +96,7 @@ export const Contact = [
     id: 2,
     name: "010-6545-6697",
     src: "/telephone.png",
-    link: "+82-010-6545-6697",
+    link: "tel:+821065456697",
   },
   // {
   //   id: 3,
@@ -194,7 +194,7 @@ export const Projects_data = [
     id: 4,
     project_name: "Modern Portfolio",
     image: "/modern_portfolio.png",
-    link: "https://impex-insurance.uz/",
+    link: "https://www.sodiqjon.uz/",
     description: "A stylish personal portfolio built with React and TypeScript. Showcases projects, skills, and contact info with a clean, modern UI. Fully responsive and optimized for performance.",
     width: 60,
     height: 60,
