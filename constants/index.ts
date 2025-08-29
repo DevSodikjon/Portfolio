@@ -96,7 +96,7 @@ export const Contact = [
     id: 2,
     name: "010-6545-6697",
     src: "/telephone.png",
-    link: "https://www.linkedin.com/in/sodikjon-nurmirzaev-46602a267/",
+    link: "+82-010-6545-6697",
   },
   // {
   //   id: 3,
